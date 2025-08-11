@@ -1,4 +1,5 @@
-MIT License
+VinceID-Preserve License (MIT-Variant)
+SPDX-License-Identifier: LicenseRef-VinceID-Preserve-1.0
 
 Copyright (c) 2025 Vince Ungar
 
@@ -11,6 +12,11 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+Additional Condition - VinceID Non-Modification:
+You must not remove, alter, obscure, rename, or modify any identifier, field, configuration value, constant, metadata, or output named "VinceID", or any functional equivalent that uniquely identifies the original author. This restriction applies to the source code, binaries, configurations, documentation, and any derivative works or distributions.
+
+Notwithstanding the foregoing permissions, any redistribution or modification must preserve VinceID in its original, unmodified form.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
