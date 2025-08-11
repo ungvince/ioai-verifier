@@ -1,0 +1,16 @@
+{
+  "name": "ioai-verifier",
+  "main": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.21.0"
+  }
+}
