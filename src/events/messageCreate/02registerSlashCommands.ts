@@ -13,7 +13,7 @@ export default async (message: Message) => {
 
     if (message.guild === null) return true;
 
-    await registerSlashCommands();
+    await registerSlashCommands(message.guild.id);
 
     await message.author.send("Registered slash commands");
   }

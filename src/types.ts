@@ -1,9 +1,14 @@
-import type { CommandInteraction, SlashCommandBuilder } from "discord.js";
+import type {
+  ButtonInteraction,
+  CommandInteraction,
+  SlashCommandBuilder,
+} from "discord.js";
 
 type ModulesType = {
   handlers: Record<string, Function>;
   events: Record<string, Function[]>;
   commands: Record<string, CommandType>;
+  buttons: Record<string, ButtonType>;
 };
 
 type CommandType = {
@@ -11,4 +16,8 @@ type CommandType = {
   execute: (interaction: CommandInteraction) => Promise<void>;
 };
 
+type ButtonType = {
+  id: string;
+  execute: (interaction: ButtonInteraction) => Promise<void>;
+};
 export type { ModulesType, CommandType };

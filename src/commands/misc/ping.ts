@@ -1,9 +1,19 @@
-import { CommandInteraction, SlashCommandBuilder } from "discord.js";
+import {
+  CommandInteraction,
+  SlashCommandBuilder,
+  MessageFlags,
+} from "discord.js";
+
+import registerFiles from "@/utils/registerFiles";
 
 export const data = new SlashCommandBuilder()
   .setName("ping")
-  .setDescription("Ping the bot");
+  .setDescription("Check if the bot is alive");
 
 export const execute = (interaction: CommandInteraction) => {
-  interaction.reply("Pong!");
+  registerFiles();
+
+  interaction.reply({
+    content: "Pong!",
+  });
 };

@@ -4,6 +4,7 @@ import path from "path";
 import modules from "@/state/modules";
 import client from "@/state/client";
 import eventHandler from "@/handlers/eventHandler";
+import noCacheRequire from "@/utils/noCacheRequire";
 
 export default () => {
   const eventDirs = getFolderContent(path.join(__dirname, "../events"));
@@ -28,7 +29,7 @@ export default () => {
         eventDir.name,
         eventFile.name
       );
-      const event = require(eventPath).default;
+      const event = noCacheRequire(eventPath).default;
 
       modules.events[eventDir.name].push(event);
     }
